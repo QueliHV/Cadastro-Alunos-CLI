@@ -33,15 +33,18 @@ Este sistema foi criado para praticar os fundamentos da linguagem Python, como:
 ## 🗂 Estrutura de Pastas
 
 ```
-cadastro_alunos/
-│
-├── app/
-│   ├── main.py               # Arquivo principal com o menu
-│   ├── cadastro.py           # Funções de cadastro e listagem
-│   ├── validador.py          # Validação de nome e notas
-│   └── utils.py              # Funções auxiliares (limpeza de tela, menu retorno)
-│
-└── README.md
+cadastro-alunos-cli/
+├── main.py
+├── README.md
+├── .gitignore
+├── .venv/
+└── app/
+    ├── util.py         # Funções auxiliares (limpeza de tela, menus)
+    ├── menu.py         # Menu principal e navegação
+    ├── cadastro.py     # Lógica de cadastro
+    ├── consulta.py     # Consulta individual
+    ├── listagem.py     # Listagem completa
+    └── validador.py    # Validações de nome e nota
 ```
 
 ---
@@ -51,8 +54,8 @@ cadastro_alunos/
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/QueliHV/Estudos-Python.git
-cd Estudos-Python/cadastro_alunos
+git clone https://github.com/QueliHV/Cadastro-Alunos-CLI.git
+cd Cadastro-Alunos-CLI
 ```
 
 2. (Opcional) Crie e ative um ambiente virtual:
